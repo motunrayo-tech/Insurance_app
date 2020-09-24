@@ -56,4 +56,5 @@ if st.button('Submit'):
 
     proba_df = pd.DataFrame(proba,columns=['Probability'],index=['Claim','No Claim'])
     proba_df.plot(kind='barh')
+    st.set_option('deprecation.showPyplotGlobalUse', False)
     st.pyplot()
